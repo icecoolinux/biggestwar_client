@@ -1,0 +1,68 @@
+<html style="margin:0; padding:0;">
+<head>
+	<script src="./game/config.js"></script>
+
+	<script src="./game/ui/lang.js"></script>
+	<script src="./game/ui/NumerateObjects.js"></script>
+	<script src="./game/ui/UI.js"></script>
+	<script src="./game/ui/minimap.js"></script>
+	<script src="./game/ui/button.js"></script>
+	<script src="./game/ui/control.js"></script>
+	<script src="./game/ui/controlPointer.js"></script>
+	<script src="./game/ui/pantalla2d.js"></script>
+	<script src="./game/ui/hub.js"></script>
+	
+	<script src="./game/Action.js"></script>
+	<script src="./game/IntentAction.js"></script>
+	<script src="./game/Net.js"></script>
+	<script src="./game/geom.js"></script>
+	<script src="./game/Player.js"></script>
+	<script src="./game/Players.js"></script>
+	<script src="./game/Unidad.js"></script>
+	<script src="./game/Recolector.js"></script>
+	<script src="./game/Soldado.js"></script>
+	<script src="./game/SoldadoRaso.js"></script>
+	<script src="./game/SoldadoEntrenado.js"></script>
+	<script src="./game/Tanque.js"></script>
+	<script src="./game/TanquePesado.js"></script>
+	<script src="./game/Construccion.js"></script>
+	<script src="./game/Base.js"></script>
+	<script src="./game/Barraca.js"></script>
+	<script src="./game/Torreta.js"></script>
+	<script src="./game/Texture.js"></script>
+	<script src="./game/Textures.js"></script>
+	<script src="./game/Audio.js"></script>
+	<script src="./game/MD2.js"></script>
+	<script src="./game/Model3D.js"></script>
+	<script src="./game/Models.js"></script>
+	<script src="./game/Load.js"></script>
+	<script src="./game/game.js"></script>
+	<script src="./game/colision.js"></script>
+	<script src="./game/gl-matrix.js"></script>
+	<script src="./game/Mineral.js"></script>
+	<script src="./game/map.js"></script>
+	<script src="./game/Area.js"></script>
+	<script src="./game/terrain.js"></script>
+	<script src="./game/camera.js"></script>
+	
+	<script src="./game/shaders/shaders.js"></script>
+	<script src="./game/shaders/shader.js"></script>
+	<script src="./game/shaders/color.js"></script>
+	<script src="./game/shaders/texture.js"></script>
+	<script src="./game/shaders/textureColor.js"></script>
+	<script src="./game/shaders/lambert.js"></script>
+	<script src="./game/shaders/phong.js"></script>
+	<script src="./game/shaders/interpolationVertexLambert.js"></script>
+	<script src="./game/shaders/interpolationVertexPhong.js"></script>
+	
+	<script src="./js/game.js" ></script>
+	
+</head>
+<body onload="start()" onkeydown="Control.keyDown(event)" onkeyup="Control.keyUp(event)" style="margin:0; padding:0;">
+	<div style="position: relative;">
+		<canvas id="glcanvas" style=" width:100%; height:100%;"></canvas>
+		<canvas id="pantalla2d" style=" width:100%; height:100%; background-color: transparent; position: absolute; left: 0px; top: 0px; z-index: 10;"></canvas>
+	</div>
+</body>
+</html>
+

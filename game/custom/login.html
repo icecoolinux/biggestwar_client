@@ -1,0 +1,90 @@
+
+
+
+
+
+
+
+
+<!-- https://blog.artegrafico.net/formulario-de-login-usando-ajaxjavascript-phpjson-y-bootstrap4-3 -->
+
+
+
+
+
+
+<html>
+	<head>
+		<title>Biggest War - Login</title>
+		<script src="jquery-3.5.1.js"></script>
+		<link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="logic.js"></script>
+		<meta charset="UTF-8"/>
+	</head>
+	<body style="background-color: #000000">
+	
+		<nav>
+			<div style="display:inline-block; width:100%; text-align:right">
+				<a href="index.html" style="float:left"><img src="images/logo_web.png" height="100" ></a>
+				<div style="margin-right:40px; margin-top: 60px;">
+					
+				</div>
+			</div>
+		</nav>
+		
+		<div class="section" id="1">
+			<div class="d-flex justify-content-center">
+				<aside id="login" class="col-md-4">    
+					<div class="card">
+						<div class="card-body">
+							<h4 class="card-title mb-4 mt-1">Acceso</h4>
+						
+							<hr />
+						
+							<form method="post" name="login_form" id="login_form" action="" onsubmit="enviar(this); return false;">
+								<div class="form-group">
+									<input class="form-control" placeholder="Email" type="email" id="email" name="email" autocomplete />
+								</div>
+								<div class="form-group">
+									<input class="form-control" placeholder="******" type="password" id="password" name="password" autocomplete />
+								</div>                                    
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<button type="submit" class="btn btn-danger btn-block" id="access" name="access">Entrar</button>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<a href="" class="btn btn-outline-danger btn-block">Registro</a>
+									</div>
+								</div>    
+								<div class="row">
+									<div class="col-md-12 pt-2 pr-4 text-right">
+										<a class="small text-danger" href="#">¿Olvidó su contraseña?</a>
+									</div>
+								</div>
+							</form>
+								
+							<!-- messages -->
+							<div class="row">
+								<div class="col-12">
+									<div class="outer-loader">
+										<span class="inner-loader"><img src="images/loading.gif" alt="consultando ..." /></span>     
+										<span class="messages"></span>
+									</div>    
+									<span class="debug"></span>    
+								</div>
+							</div> <!-- end messages -->     
+						</div>
+						
+					</div> 
+				</aside>
+			</div>
+		</div>
+		
+	</body>
+</html>
+
+
+

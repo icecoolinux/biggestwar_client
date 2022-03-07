@@ -1,0 +1,80 @@
+
+
+<!-- https://blog.artegrafico.net/formulario-de-login-usando-ajaxjavascript-phpjson-y-bootstrap4-3 -->
+
+<html>
+	<head>
+		<title>Biggest War - Login</title>
+		<script src="js/jquery-3.5.1.js"></script>
+		<link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/homeUser.css">
+		<script src="./js/config.js" ></script>
+		<meta charset="UTF-8"/>
+	</head>
+	<body style="background-color: #000000">
+	
+		<nav>
+			<div style="display:inline-block; width:100%; text-align:right">
+				<a href="index.html" style="float:left"><img src="images/logo_web.png" height="100" ></a>
+				<div style="margin-right:40px; margin-top: 60px;">
+					
+				</div>
+			</div>
+		</nav>
+		
+		<div class="section" id="1">
+			<div class="d-flex justify-content-center">
+				<aside class="col-md-6">    
+					<div class="card">
+						<div class="card-body" style="text-align:center">
+						
+							<h4 class="card-title mb-4 mt-1">
+								<p id="userName" style="display:inline; margin:0; font-size:28"></p> | <a href="#" onclick="closeSession();" style="font-size:16">Close session</a> 
+							</h4>
+							<div class="divUserStats"> 
+								<p class="pLabelUserStats">Win</p> <br>
+								<p id="win" class="pValueUserStats">0<p> 
+							</div>
+							<div class="divUserStats"> 
+								<p class="pLabelUserStats">Lose</p> <br>
+								<p id="lose" class="pValueUserStats">0<p> 
+							</div>
+							<div class="divUserStats"> 
+								<p class="pLabelUserStats">Points</p> <br>
+								<p id="points" class="pValueUserStats">0<p> 
+							</div>
+							<p id="results"><p>
+							
+							<button id="buttonEnterGame" onclick="enterGame()" class="button_enter_game">Enter Game</button>
+							
+								
+							<!-- messages -->
+							<div class="row">
+								<div class="col-12 mt-3">
+									<div class="outer-loader">
+										<span id="error_message" style="color:red"></span>
+									</div>    
+									<span class="debug"></span>    
+								</div>
+							</div> <!-- end messages -->  
+						
+							<div id="top_table">
+							</div>
+							
+						</div>
+						
+					</div> 
+				</aside>
+			</div>
+		</div>
+		
+		<script src="./js/homeUser.js" ></script>
+		
+	</body>
+</html>
+
+
+
+
+
